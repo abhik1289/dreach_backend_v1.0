@@ -5,6 +5,9 @@ import { envMode } from "../app.js";
 
 export const errorMiddleware = (err:ErrorHandler, req:Request, res:Response, next:NextFunction)=> {
 
+
+  //this is 
+
   err.message||= "Internal Server Error";
   err.statusCode = err.statusCode || 500;
   
